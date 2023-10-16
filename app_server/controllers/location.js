@@ -1,25 +1,25 @@
 module.exports.homelist = function(req, res) {
     res.render('location-list', {
-        title: 'Loc8r - find a place to work with wifi',
+        title: 'public schemes-know different government schemes',
         pageHeader: {
-            title: 'LOCATOR',
-            strapline: 'Find places to work with wifi near you!'
+            title: 'PUBLICSCHEMES',
+            strapline: 'proveids sevices'
         },
-        sidebar: "Looking for wifi and a seat? Loc8r helps you find places to work when out and about. Perhaps with coffee, cake or a pint? Let Loc8r help you find the place you're looking for.",
+        sidebar: "Looking for a employment? publicscheme helps you find places to work when out and about. Perhaps with coffee, cake or a pint? Let Loc8r help you find the place you're looking for.",
         locations: [{
-            name: 'Starbucks',
+            name: 'employment',
             address: '125 High Street, Reading, RG6 1PS',
             rating: 3,
             facilities: ['Hot drinks', 'Food', 'Premium wifi'],
             distance: '100m'
         }, {
-            name: 'Cafe Raasta',
+            name: 'health',
             address: '125 High Street, Reading, RG6 1PS',
             rating: 4,
             facilities: ['Hot drinks', 'Food', 'Premium wifi'],
             distance: '200m'
         }, {
-            name: 'Burger King',
+            name: 'education',
             address: '125 High Street, Reading, RG6 1PS',
             rating: 2,
             facilities: ['Food', 'Premium wifi'],
@@ -30,16 +30,16 @@ module.exports.homelist = function(req, res) {
 //locationInfo//
 module.exports.locationInfo = function(req, res) {
     res.render('location-info', {
-        title: 'Starbucks',
+        title: 'employment',
         pageHeader: {
-            title: 'Starbucks'
+            title: 'employment'
         },
         sidebar: {
             context: 'is on Loc8r because it has accessible wifi and space to sit down with your laptop and get some work done.',
             callToAction: 'If you\'ve been and you like it - or if you don\'t - please leave a review to help other people just like you.'
         },
         location: {
-            name: 'Starbucks',
+            name: 'nhs',
             address: '125 High Street, Reading, RG6 1PS',
             rating: 3,
             facilities: ['Hot drinks', 'Food', 'Premium wifi'],
@@ -79,16 +79,16 @@ module.exports.locationInfo = function(req, res) {
 //locationInfo2//
 module.exports.locationInfo2 = function(req, res) {
     res.render('location-info2', {
-        title: 'Cafe Raasta',
+        title: 'health',
         pageHeader: {
-            title: 'Cafe Raasta'
+            title: 'health'
         },
         sidebar: {
             context: 'is on Loc8r because it has accessible wifi and space to sit down with your laptop and get some work done.',
             callToAction: 'If you\'ve been and you like it - or if you don\'t - please leave a review to help other people just like you.'
         },
         location: {
-            name: 'Cafe Raasta',
+            name: 'health',
             address: '125 High Street, Reading, RG6 1PS',
             rating: 3,
             facilities: ['Hot drinks', 'Food', 'Premium wifi'],
@@ -127,16 +127,16 @@ module.exports.locationInfo2 = function(req, res) {
 //locationInfo3//
 module.exports.locationInfo3 = function(req, res) {
         res.render('location-info3', {
-            title: 'Burger King',
+            title: 'education',
             pageHeader: {
-                title: 'Burger King'
+                title: 'education'
             },
             sidebar: {
                 context: 'is on Loc8r because it has accessible wifi and space to sit down with your laptop and get some work done.',
                 callToAction: 'If you\'ve been and you like it - or if you don\'t - please leave a review to help other people just like you.'
             },
             location: {
-                name: 'Burger King',
+                name: 'education',
                 address: '125 High Street, Reading, RG6 1PS',
                 rating: 3,
                 facilities: ['Hot drinks', 'Food', 'Premium wifi'],

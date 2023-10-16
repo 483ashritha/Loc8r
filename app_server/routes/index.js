@@ -1,8 +1,8 @@
 require('dotenv').config();
 var express = require('express');
 var router = express.Router();
-var ctrllocation = require('../controllers/location');
-var ctrlothers = require('../controllers/others');
+var ctrllocation = require('../../app_server/controllers/location');
+var ctrlothers = require('../../app_server/controllers/others');
 
 /* GET Locations page */
 router.get('/', ctrllocation.homelist);

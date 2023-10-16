@@ -1,6 +1,5 @@
 var mongoose=require('mongoose');
-var loc=require('./locations')
-require('dot').config();
+require('dotenv').config();
 const PORT=process.env.PORT || 3000;
 
 var gracefulshutdown;
@@ -10,14 +9,14 @@ if(process.env.NODE_ENV === 'production'){
 }
 mongoose.connect(dbURI);
 
-mongoose.connection.on('connected',function () {
-  console.log('Mongoose connected to' +dbURI);
+mongoose.connection.on('connected', ()  => {
+  console.log('Mongoose connected to ${dbURI}');
 
 });
-mongoose.connection.on('error',function(err){
+mongoose.connection.on('error',err =>{
   console.log('Mongoose connection error:' +err);
 });
-mongoose.connection.on('disconnected',function (){
+mongoose.connection.on('disconnected', () =>{
   console.log('Mongoose disconnected');
 });
 require('./locations');
